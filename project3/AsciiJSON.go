@@ -14,7 +14,9 @@ func main() {
 			"lang": "Go语言",
 			"tag":  "<br>",
 		}
+		//输出：{"lang":"Go\u8bed\u8a00","tag":"\u003cbr\u003e"}
 		c.AsciiJSON(http.StatusOK, data)
 	})
+	// 访问地址：http://127.0.0.1:8080/someJSON
 	r.Run(":8080")
 }

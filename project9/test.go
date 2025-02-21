@@ -1,8 +1,6 @@
 package main
 
 import (
-	"log"
-
 	"github.com/gin-gonic/gin"
 )
 
@@ -28,7 +26,7 @@ func main() {
 				c.JSON(401, gin.H{"status": "unauthorized"})
 			}
 		} else {
-			log.Panic(err)
+			//log.Panic(err)
 			c.JSON(500, gin.H{"status": err.Error()})
 		}
 	})

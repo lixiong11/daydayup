@@ -13,8 +13,9 @@ func main() {
 		data := map[string]interface{}{
 			"foo": "bar",
 		}
+		//访问地址：http://127.0.0.1:8080/JSONP?callback=X
+		// 将输出：X({\"foo\":\"bar\"})
 		c.JSONP(http.StatusOK, data)
-
 	})
 	// 监听并在0.0.0.0:8080上启动服务
 	r.Run(":8080")

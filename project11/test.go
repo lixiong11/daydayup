@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// JSON 使用 unicode 替换特殊 HTML 字符，例如 < 变为 \ u003c。如果要按字面对这些字符进行编码，则可以使用 PureJSON
 func main() {
 	r := gin.Default()
 	// 提供unicode实体

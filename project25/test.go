@@ -11,6 +11,8 @@ import (
 
 // 静态资源嵌入
 func main() {
+	//禁止日志颜色
+	gin.DisableConsoleColor()
 	r := gin.New()
 
 	t, err := loadTemplate()

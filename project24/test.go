@@ -6,6 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// 静态文件服务
 func main() {
 	router := gin.Default()
 	router.Static("/assets", "./assets")

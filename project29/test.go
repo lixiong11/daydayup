@@ -6,6 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// 设置获取cookie
 func main() {
 	router := gin.Default()
 	router.GET("/cookie", func(c *gin.Context) {

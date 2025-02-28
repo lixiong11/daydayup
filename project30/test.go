@@ -33,3 +33,5 @@ func main() {
 	})
 	r.Run(":8080")
 }
+
+//访问链接为：http://127.0.0.1:8080/admin/secrets   返回：{"secret":{"email":"foo@bar.com","phone":"123332"},"user":"foo"}

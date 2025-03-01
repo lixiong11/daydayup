@@ -30,3 +30,5 @@ func startPage(c *gin.Context) {
 //http://127.0.0.1:8085/testing?name=xiaoming&address=hubei
 //person.Name: xiaoming   person.Address= hubei
 //第16行any 为任意请求方式
+//Your identification has been saved in C:\Users\Administrator/.ssh/id_rsa
+//Your public key has been saved in C:\Users\Administrator/.ssh/id_rsa.pub
